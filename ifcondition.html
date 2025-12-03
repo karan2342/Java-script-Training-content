@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <P id="demo">Good evening </P> <!--first code-->
+  <p id="demo1">test2</p> <!--second code-->
+  <p id="demo2">test3</p><!--Third code-->
+  <script>
+    //first code
+    if(new Date().getHours() > 16){
+      document.getElementById("demo").innerHTML = "Good day";
+    }
+ 
+  //second code3
+  const time = new Date().getHours();
+  let greeting;
+  if(time < 10){
+    greeting = "Good morning";
+  }
+  else if(time <20){
+    greeting = " Good day ";
+  }
+  else{
+    greeting ="Good afternoon "
+  }
+  document.getElementById("demo1").innerHTML = greeting;
+
+  //third code
+  let text1;
+  if(Math.random()<0.5){
+    text = "<a href='https://chatgpt.com/c/692e29e9-c6ec-8321-a925-6399c5f5b721'>Hello there</a>";
+  }
+  else{
+    text = "<a href='https://www.w3schools.com/js/js_if_else.asp'> bye there </a>"
+  }
+  document.getElementById("demo2").innerHTML = text;
+  </script>
+</body>
+
+</html>
