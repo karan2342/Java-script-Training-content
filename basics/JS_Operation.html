@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+
+  <p>If the first value is true then second value is assigned</p>
+  <p id="demo5"></p>
+
+  <p>if the first value is false then second value is assigned</p>
+  <p id="demo6"></p>
+
+<script>
+  let a = 3;
+  let x = (100+50) * a;
+  document.getElementById("demo").innerHTML = x;
+
+  let y = 5;
+  y *= 10;
+  document.getElementById("demo1").innerHTML = y;
+
+  let y2 = 5;
+  y2 **= 3;
+  document.getElementById("demo2").innerHTML = y2; 
+
+  let z = 5;
+  document.getElementById("demo3").innerHTML = Math.pow(z , 2);
+
+  let text = "Hello ";
+  text += "World";
+  document.getElementById("demo4").innerHTML = text;
+
+  let b = true;
+  let c = b &&=10;
+  document.getElementById("demo5").innerHTML = c;
+
+  let d = false;
+  let e = d ||= 10;
+  document.getElementById("demo6").innerHTML = e;
+
+  </script>
+
+</body>
+</html>
