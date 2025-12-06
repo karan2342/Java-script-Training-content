@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+
+  <script>
+    //method 1 to create object in java
+    const car = {type:"cars", model:"5000", color:"white"}
+    document.getElementById("demo").innerHTML = car.type;
+   
+    //method 
+    const person = {};
+    person.name = "hami";
+    person.age = 21;
+    person.gender = 'male';
+    person.DOB = "2099/12/13"
+
+    document.getElementById('demo1').innerHTML = "Name " + person.name + "<br>" + "Age " + person.age
+
+  //js object function 
+  function ObjectPerson(first,last, age){  
+  this.FirstName = first;
+  this.LastName = last;
+  this.age = age;
+  }
+
+  const info = new ObjectPerson("Willam", "imallan", 34);
+  const info2 = new ObjectPerson("robart", "willan", 23);
+  document.getElementById('demo2').innerHTML = "First Name : "+ info.FirstName + "<br>"+ "Last Name : " +  info.LastName + "<br>"+  'Age : ' + info.age;
+
+  document.getElementById('demo3').innerHTML = "First Name : "+ info2.FirstName + "<br>"+ "Last Name : " +  info2.LastName + "<br>"+  'Age : ' + info2.age;
+
+
+  </script>
+</body>
+</html>
