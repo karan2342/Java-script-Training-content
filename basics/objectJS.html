@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Testing</h1>
+  <p id="demo"></p>
+  
+  <script>
+    //Accessing javascript  object properties using expression
+    const person = {
+      firstName :"hikaru",
+      lastName : "saint",
+      age : 34
+    };
+    let x = "firstName";
+    let y = "lastName";
+    person.clas = "six"; // adding new properties 
+    delete person.age; // delete properties 
+    document.getElementById("demo").innerHTML = person[x] + " " + person[y] + " " +  person.age + 
+    " " +  person.clas ;
+  </script>
+</body>
+</html>

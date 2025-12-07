@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+   <p id="demo2"></p>
+   <p id="demo3"></p>
+   <p id="demo4"></p>
+  <script>
+
+    
+    const person = {
+      firstName : "willam",
+      lastName : "Shoin",
+      age : 23,
+
+      fullName: function(){ //object method
+        return "Name : " + this.firstName + " " + this.lastName + "<br>" + "Age : " +  this.age;
+      }
+    };
+    document.getElementById("demo").innerHTML = person.fullName();
+    
+  
+    const college = {
+      firstName : "roman",
+      lastName : "shinoe",
+      qualifiction : "Master"
+    }
+
+    //Add a method
+    college.details = function(){
+      return "Name : " + this.firstName + this.lastName + "<br>" + "Education Level : " + this.qualifiction
+    }
+    document.getElementById("demo2").innerHTML = college.details();
+  
+
+
+   // js object function
+    function school(first,last,age){
+     this.firstName = first;
+     this.lastName = last;
+     this.age = age;
+    }
+
+    //Es6 method
+    school.prototype.details = function() {
+      return  "Name : " + (this.firstName + " " +  this.lastName).toUpperCase() + "<br>" + "Age : " + this.age
+    };
+  
+    // create object
+    const student1 = new school("harim","wifd",34);
+    const student2 = new school("hikaru", "saint", 23);
+
+    
+    // display method
+    document.getElementById("demo3").innerHTML = student1.details();
+     document.getElementById("demo4").innerHTML = student2.details();
+
+  </script>
+</body>
+</html>
