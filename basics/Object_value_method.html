@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <p id="demo2"></p>
+
+  <script>
+  const Person1 = {
+  name: "hikaru",
+  age: 20,
+  city: "New York"
+
+  };
+
+  const myArray = Object.values(Person1);  // create an array from the properties
+  let text = myArray.toString(); //Stringify the arrow
+  
+  document.getElementById("demo").innerHTML = text;
+  
+
+  let text1 = "";
+  for(let content of Object.values(Person1) ){  
+    text1 += content + " ";
+  }
+  document.getElementById("demo2").innerHTML = text1
+
+
+
+
+</script>
+</body>
+
+
+
+</html>
